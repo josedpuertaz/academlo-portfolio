@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-size: calc(1em + 1vw);
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-button {
+    display: flex;
+    justify-content: end;
+    position: sticky;
+    top: 10%;
+}
+
+.text-decoration-home {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.label-home::after {
+    content: 'Works';
+}
+
+.label-home:hover:after {
+    content: '/works';
+    color: #ea0f1e;
+    font-weight: 600;
+}
+
+.hide-text {
+    visibility: hidden;
+}
+
+.max-width-70 {
+    max-width: 70%;
+    margin: auto;
+}
+
+.title{
+    font-size: 2em;
+    color: black;
+    font-size: 600;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+
+@media (max-width: 810px) {
+    body {
+        font-size: calc(1em + 1vh);
+    }
+
+    .max-width-70 {
+        max-width: 85%;
+    }
+
+}

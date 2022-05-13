@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: calc(1em + 1vw);
+    background-color: rgba(0, 0, 0, 0.96);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.max-width {
+    position: relative;
+    max-width: 70%;
+    height: 100vh;
+    margin: auto;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-img {
+    position: absolute; 
+    height: 100vh;
+    left: 45%;
+}
+
+@media (max-width: 810px) {
+    body {
+        font-size: calc(1em + 1vh);
+    }
+
+    .max-width {
+        max-width: 85%;
+    }
+
+    .bg-img {
+        display: none;
+    }
+}
+
+.p-relative{ 
+    position: relative;
+    width: max-content;
+    height: max-content;
+    line-height: 200%;
+}
+
+.button-decoration {
+    text-decoration: none;
+}
+
+.hide-text {
+    visibility: hidden;
+}
+
+.hover-text {
+    position: absolute;
+    left: 0;
+}
+
+.hover-text:hover {
+    left: 30%;
+    transition: left 0.6s cubic-bezier(.17,.67,.83,.67) ;
+}
+
+.text-decoration {
+    font-size: 2em;
+    font-weight: 600;
+    color: #ea0f1e;
+}
+
+.text-white {
+    color: white;
+}
+
+.label-soy::after {
+    content: 'Soy';
+}
+
+.label-soy:hover:after {
+    content: 'About';
+}
+
+.label-jose::after {
+    content: 'José';
+}
+
+.label-jose:hover:after {
+    content: 'Works';
+}
+
+.label-daniel::after {
+    content: 'Daniel';
+}
+
+.label-daniel:hover:after {
+    content: 'Contact';
+}
